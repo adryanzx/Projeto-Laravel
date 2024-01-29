@@ -1,0 +1,1 @@
+<?php /**PATH C:\xampp\htdocs\AtividadeWeb\AtividadeWeb\resources\views/Vercandidato.blade.php ENDPATH**/ ?>

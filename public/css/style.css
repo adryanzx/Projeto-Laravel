@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+ 
+body {
+    background-color: #5b74ff63;
+}
+ 
+section ,
+footer {
+    padding: 54px 0;
+}
+ 
+h3 {
+    font-size: 50px;
+}
+ 
+p {
+    color: #0000009c;
+}
+ 
+.container {
+    max-width: 2400px;
+    margin: 0 auto;
+    padding: 0 5%;
+    cursor: pointer;
+}
+ 
+header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+ 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+ 
+nav ul {
+    display: flex;
+    align-items: center;
+}
+ 
+nav ul a {
+    color: #fff;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+ 
+nav ul a:not(.btn)::after {
+    content: "";
+    background-color: #4f9cf9;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+ 
+nav ul a:hover::after {
+    width: 100%;
+}
+/* Responsivo mobile */
+nav .menu-icon {
+    cursor: pointer;
+    font-size: 25px;
+    color: #fff;
+    display: none;
+}
+ 
+nav .close-icon {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+}
+ 
+.btn {
+    background-color: #4f9cf9;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+ 
+/* Animação do botão */
+ 
+.btn.animate-btn {
+    animation: animate-outline 1s ease-out infinite;
+}
+ 
+.btn:hover {
+    background-color: #3580db;
+}
+ 
+@keyframes animate-outline {
+    from {
+        outline: 0px solid #4f9cf98a;
+    }
+    to {
+        outline: 15px solid #4f9cf900;
+    }
+}
+ 
+.banner {
+    display: flex;
+    justify-content: center;
+}
+ 
+.banner-text {
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+ 
+.banner .banner-text h1 {
+    font-size: 96px;
+    color: #fff;
+}
+ 
+.banner .banner-text p {
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+ 
+ 
+ 
+/* Clientes */
+.clientes h3,
+.clientes p {
+    text-align: center;
+}
+ 
+.clientes .container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+ 
+.footer {
+    background-color: #4f9cf9;
+    text-align: center;
+}
+ 
+.footer i {
+    color: #4f9cf9;
+    font-size: 19px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+ 
+.footer p {
+    margin-top: 10px;
+    color: #fff;
+}
+ 
+/* Página Sobre */
+.sobre .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.sobre .sobre-text {
+    width: 50%;
+    padding-right: 40px;
+}
+ 
+.sobre .sobre-text p {
+    margin: 18px 0;
+    color: #000000a6;
+}
+ 
+.sobre .sobre-img {
+    width: 50%;
+}
+ 
+.sobre .sobre-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+ 
+ 
+ 
+/* Página Contato */
+.contacto-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+ 
+.left-side {
+    width: 50%;
+    padding: 30px;
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content;
+}
+ 
+.left-side div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+ 
+.left-side div i {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #fff;
+}
+ 
+.left-side p {
+    font-size: 17px;
+    color: #fff;
+   
+}
+ 
+.right-side {
+    width: 50%;
+}
+ 
+.right-side input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47px;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    font-weight: lighter;
+}
+ 
+.right-side input:focus,
+.right-side textarea:focus {
+    border-color: #4f9cf9;
+}
+ 
+.right-side textarea {
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none;
+}
+ 
+.right-side button {
+    border: none;
+}
+ 
+ 
+@media (max-width: 830px) {
+    /* Menu Mobile */
+    .ul {
+        position: fixed;
+        background-color: #184b88;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+ 
+    .ul.open {
+        clip-path: circle(141.2% at 100% 0);
+    }
+ 
+    .ul a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+ 
+    nav .menu-icon {
+        display: block;
+    }
+ 
+    nav .close-icon {
+        display: block;
+        position: absolute;
+        top: 46px;
+        right: 28px;
+    }
+    /* Página Home responsivo */
+    .faca-mais .faca-mais-text {
+        margin-top: 10px;
+        padding: 0 20px;
+        order: 1;
+    }
+    .faca-mais .container {
+        flex-direction: column;
+    }
+ 
+    .faca-mais .faca-mais-text h3 {
+        font-size: 48px;
+    }
+ 
+    .faca-mais .faca-mais-text,
+    .faca-mais .faca-mais-img {
+        width: 100%;
+    }
+    /* Banner responsivo */
+    .banner .banner-text {
+        padding: 0;
+        margin: 80px;
+    }
+ 
+    .banner .banner-text h1 {
+        font-size: 80px;
+    }
+ 
+    .banner .banner-text p {
+        font-size: 15px;
+    }
+ 
+    .depoimentos .card-item {
+        width: 100%;
+    }
+ 
+    .clientes img {
+        flex-wrap: wrap;
+    }
+ 
+        /* Sobre responsivo */
+   
+    .sobre .container {
+        flex-direction: column-reverse;
+    }
+ 
+    .sobre .sobre-img,
+    .sobre .sobre-text {
+        width: 100%;
+    }
+    .sobre .sobre-text {
+        margin-top: 40px;
+    }
+ 
+    /* Contato responsivo */
+    .contacto .contacto-info  {
+        flex-direction: column-reverse;
+    }
+   
+    .contacto-info .right-side,
+    .contacto-info .left-side {
+        width: 100%;
+    }
+ 
+    .contacto-info .right-side {
+        margin-bottom: 30px;
+    }
+ 
+    @media (max-width: 500px) {
+        .banner .banner-text h1 {
+            font-size: 50px;
+        }
+ 
+        .faca-mais .faca-mais-text h3 {
+            font-size: 40px;
+        }
+    }
+ 
+ 
+}
